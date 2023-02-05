@@ -1,0 +1,51 @@
+@import "./global.scss";
+
+.header {
+  padding-top: 34px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-list {
+  display: flex;
+  gap: 0 30px;
+}
+.promo {
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 300px;
+  text-align: center;
+}
+.header-slider {
+  & .swiper-pagination-bullet{
+    opacity: 1;
+    width: 25px;
+    height: 25px;
+    background: #7a3d1c;
+    border: 2px solid #fdd486;
+    padding: 0;
+    margin: 0 !important;
+    font-size: 0;
+  }
+  & .slider-pagination{
+    display: flex;
+    justify-content: center;
+    gap: 0 15px;
+  }
+}
+.header-slider__title {
+  font-size: 96px;
+  font-weight: 700;
+}
+.header-slider__text {
+  margin-bottom: 30px;
+}
+
